@@ -3,8 +3,6 @@ import { styled } from '@mui/material/styles';
 const HomeContainer = styled('div')(({ theme }) => ({
     height: '100vh',
     background: `linear-gradient(${theme.palette.primary.main}, ${theme.palette.primary.dark})`,
-    display: 'flex',
-    alignItems: 'center',
 
     '.photo': {
         zIndex: 1,
@@ -35,7 +33,7 @@ const HomeContainer = styled('div')(({ theme }) => ({
     },
 
     '.intro': {
-        padding: 20,
+        padding: 30,
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
@@ -48,9 +46,8 @@ const HomeContainer = styled('div')(({ theme }) => ({
 
     '.slice': {
         width: '33vw',
-        height: '100vh',
+        height: '100%',
         background: `linear-gradient(${theme.palette.secondary.main}, ${theme.palette.secondary.dark})`,
-        borderRight: `10px solid ${theme.palette.secondary.light}`,
         paddingRight: 10,
         position: 'absolute',
         top: 0,
@@ -59,6 +56,7 @@ const HomeContainer = styled('div')(({ theme }) => ({
 
     [theme.breakpoints.down('md')]: {
         height: '100vh',
+        marginTop: 80,
 
         '.photo': {
             height: 'auto',
@@ -72,7 +70,7 @@ const HomeContainer = styled('div')(({ theme }) => ({
 
                 img: {
                     margin: 0,
-                    borderRadius: 22,
+                    borderRadius: 0,
                     border: `6px solid ${theme.palette.secondary.light}`,
                     width: 290,
                     height: 'auto',
@@ -81,6 +79,8 @@ const HomeContainer = styled('div')(({ theme }) => ({
         },
 
         '.intro': {
+            padding: 0,
+
             h4: {
                 fontSize: '1.8rem'
             }

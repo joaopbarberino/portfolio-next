@@ -1,6 +1,6 @@
 import { Roboto, Quicksand } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
-import { red, teal, deepOrange } from '@mui/material/colors';
+import { red, cyan } from '@mui/material/colors';
 
 export const roboto = Roboto({
 	weight: ['300', '400', '500', '700'],
@@ -17,7 +17,7 @@ export const quicksand = Quicksand({
 });
 
 // Create a theme instance.
-const defaultTheme = createTheme({
+const colorSchemes = createTheme({
 	palette: {
 		primary: {
 			light: '#333333',
@@ -25,19 +25,39 @@ const defaultTheme = createTheme({
 			dark: '#080808',
 		},
 
+		// secondary: {
+		// 	light: cyan.A200,
+		// 	main: cyan.A400,
+		// 	dark: cyan.A700,
+		// },
+
 		secondary: {
-			light: teal.A200,
-			main: teal.A400,
-			dark: teal.A700,
+			light: cyan[600],
+			main: cyan[700],
+			dark: cyan[800],
 		},
 
 		error: {
 			main: red.A400,
 		},
 	},
+});
+
+const defaultTheme = createTheme({
+	...colorSchemes,
 	typography: {
 		fontFamily: quicksand.style.fontFamily,
 	},
+	components: {
+		MuiMenu: {
+			styleOverrides: {
+				paper: {
+					backgroundColor: colorSchemes.palette.primary.dark,
+					// border: `1px solid ${colorSchemes.palette.secondary.dark}`
+				}
+			}
+		}
+	}
 });
 
 export default defaultTheme;

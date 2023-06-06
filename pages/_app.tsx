@@ -9,6 +9,7 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import AppContext from '@/services/AppContext';
 import theme from '@/themes';
 import createEmotionCache from '@/services/createEmotionCache';
+import AppBar from '@/components/AppBar';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -30,6 +31,7 @@ export default function MyApp(props: MyAppProps) {
                 <ThemeProvider theme={theme}>
                     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
                     <CssBaseline />
+                    <AppBar />
                     <Component {...pageProps} />
                 </ThemeProvider>
             </AppContext.Provider>

@@ -2,24 +2,20 @@
     "en": {
         "header": [
             {
-                "text": "Home",
-                "link": "#home"
-            },
-            {
                 "text": "Who am I?",
-                "link": "#who"
+                "link": "/who"
             },
             {
                 "text": "Skills",
-                "link": "#skills"
+                "link": "/skills"
             },
             {
                 "text": "Projects",
-                "link": "#projects"
+                "link": "/projects"
             },
             {
                 "text": "Contact",
-                "link": "#contact"
+                "link": "/contact"
             }
         ],
         "home": {
@@ -172,24 +168,20 @@
     "ptBr": {
         "header": [
             {
-                "text": "Home",
-                "link": "#home"
-            },
-            {
                 "text": "Quem sou eu?",
-                "link": "#who"
+                "link": "/who"
             },
             {
                 "text": "Habilidades",
-                "link": "#skills"
+                "link": "/skills"
             },
             {
                 "text": "Projetos",
-                "link": "#projects"
+                "link": "/projects"
             },
             {
                 "text": "Contato",
-                "link": "#contato"
+                "link": "/contato"
             }
         ],
         "home": {
