@@ -2,6 +2,10 @@
     "en": {
         "header": [
             {
+                "text": "Home",
+                "link": "/"
+            },
+            {
                 "text": "Who am I?",
                 "link": "/who"
             },
@@ -167,6 +171,10 @@
     },
     "ptBr": {
         "header": [
+            {
+                "text": "Home",
+                "link": "/"
+            },
             {
                 "text": "Quem sou eu?",
                 "link": "/who"

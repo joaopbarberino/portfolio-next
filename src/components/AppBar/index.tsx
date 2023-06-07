@@ -10,6 +10,8 @@ import Logo from './logo';
 
 import data from '@/helpers/data.json';
 import AppContext from '@/services/AppContext';
+import { useRouter } from 'next/router';
+import defaultTheme from '@/themes';
 
 const settings: { title: string, value: 'en' | 'ptBr' }[] = [
     {
@@ -24,6 +26,8 @@ const settings: { title: string, value: 'en' | 'ptBr' }[] = [
 
 const ResponsiveAppBar = () => {
     const { language, setLanguage } = useContext(AppContext);
+    const { pathname } = useRouter();
+
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
     const [anchorElSettings, setAnchorElSettings] = useState<null | HTMLElement>(null);
 
@@ -99,6 +103,8 @@ const ResponsiveAppBar = () => {
                                         textAlign='center'
                                         component={Link}
                                         href={item.link}
+                                        color='white'
+                                        borderBottom={pathname === item.link ? `2px solid ${defaultTheme.palette.secondary.light}` : 'none'}
                                     >
                                         {item.text}
                                     </Typography>
@@ -126,7 +132,15 @@ const ResponsiveAppBar = () => {
                                 <Button
                                     key={item.text}
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{
+                                        my: 2,
+                                        textAlign: 'center',
+                                        color: 'white',
+                                        display: 'block',
+                                        borderLeft: pathname === item.link ? `2px solid ${defaultTheme.palette.secondary.light}` : 'none',
+                                        borderBottom: pathname === item.link ? `2px solid ${defaultTheme.palette.secondary.light}` : 'none',
+                                        borderRadius: 0
+                                    }}
                                     LinkComponent={Link}
                                     href={item.link}
                                 >
