@@ -5,7 +5,7 @@ import { StyledLogo } from './styles';
 const Logo = () => {
     return (
         <StyledLogo>
-            <CodeIcon color='secondary' />
+            <CodeIcon />
             <hr />
             <div className='name'>
                 <Typography className='up'>JOÃO PEDRO</Typography>
