@@ -117,7 +117,7 @@ const ResponsiveAppBar = () => {
                         variant='h5'
                         noWrap
                         component={Link}
-                        href=''
+                        href='/'
                         sx={{
                             mr: 4,
                             display: { xs: 'flex', md: 'none' },
