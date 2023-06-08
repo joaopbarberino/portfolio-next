@@ -1,8 +1,8 @@
 import { styled } from '@mui/material/styles';
 
 const HomeContainer = styled('div')(({ theme }) => ({
-    height: '100vh',
-    background: `linear-gradient(${theme.palette.primary.main}, ${theme.palette.primary.dark})`,
+    paddingTop: 40,
+    position: 'relative',
 
     '.photo': {
         zIndex: 1,
@@ -55,9 +55,6 @@ const HomeContainer = styled('div')(({ theme }) => ({
     },
 
     [theme.breakpoints.down('md')]: {
-        height: '100vh',
-        marginTop: 80,
-
         '.photo': {
             height: 'auto',
             border: 'none',
@@ -95,7 +92,7 @@ const HomeContainer = styled('div')(({ theme }) => ({
     },
 
     [theme.breakpoints.down('sm')]: {
-        height: 'auto',
+        minHeight: 'auto !important',
 
         div: {
             img: {

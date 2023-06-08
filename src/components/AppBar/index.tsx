@@ -1,12 +1,12 @@
 // Adapted https://mui.com/material-ui/react-app-bar/#app-bar-with-responsive-menu
 
 import React, { useState, useContext } from 'react';
-import Link from 'next/link';
 
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, MenuItem, Container, Button, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import TranslateIcon from '@mui/icons-material/Translate';
 import Logo from './logo';
+import Link from '@/components/Link';
 
 import data from '@/helpers/data.json';
 import AppContext from '@/services/AppContext';
@@ -52,7 +52,7 @@ const ResponsiveAppBar = () => {
     };
 
     return (
-        <AppBar position='absolute'>
+        <AppBar position='fixed'>
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
                     <Typography

@@ -1,11 +1,12 @@
 // Adapted from: https://codepen.io/Shtam3x/pen/Bevpxd
 
 import { styled } from '@mui/material/styles';
+import { Button } from '@mui/material';
 
 const speed = '.3s';
 const transition = `all ${speed} cubic-bezier(0.310, -0.105, 0.430, 1.400)`;
 
-const StyledButton = styled('a')(({ theme }) => ({
+const StyledButton = styled(Button)(({ theme }) => ({
     display: 'block',
     backgroundColor: theme.palette.secondary.dark,
     width: 300,
@@ -17,7 +18,7 @@ const StyledButton = styled('a')(({ theme }) => ({
     inset: 0,
     cursor: 'pointer',
     overflow: 'hidden',
-    transition: transition,
+    borderRadius: 0,
 
     'span, .icon': {
         display: 'flex',

@@ -56,6 +56,14 @@ const defaultTheme = createTheme({
 					// border: `1px solid ${colorSchemes.palette.secondary.dark}`
 				}
 			}
+		},
+		MuiLink: {
+			styleOverrides: {
+				root: {
+					color: 'white',
+					textDecoration: 'none'
+				}
+			}
 		}
 	}
 });
