@@ -120,6 +120,7 @@ const ResponsiveAppBar = () => {
                         component={Link}
                         href='/'
                         sx={{
+                            mr: 1,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
                         }}
