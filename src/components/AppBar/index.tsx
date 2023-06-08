@@ -76,6 +76,7 @@ const ResponsiveAppBar = () => {
                             aria-haspopup='true'
                             onClick={handleOpenNavMenu}
                             color='inherit'
+                            sx={{ p: 0}}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -119,7 +120,6 @@ const ResponsiveAppBar = () => {
                         component={Link}
                         href='/'
                         sx={{
-                            mr: 4,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
                         }}

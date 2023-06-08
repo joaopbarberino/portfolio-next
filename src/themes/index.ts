@@ -61,7 +61,13 @@ const defaultTheme = createTheme({
 			styleOverrides: {
 				root: {
 					color: 'white',
-					textDecoration: 'none'
+					textDecoration: 'none',
+					WebkitTapHighlightColor: 'transparent',
+					WebkitTouchCallout: 'none',
+					WebkitUserSelect: 'none',
+					KhtmlUserSelect: 'none',
+					MozUserSelect: 'none',
+					userSelect: 'none',
 				}
 			}
 		}

@@ -13,15 +13,15 @@ interface IHomeButtonProps {
 
 const HomeButton: React.FC<IHomeButtonProps> = ({ text, href }) => {
     return (
-        <Link href={href}>
-            <StyledButton role='button'>
+        <StyledButton role='button'>
+            <Link href={href}>
                 <span>{text}</span>
 
                 <div className='icon'>
                     <ArrowForwardIcon />
                 </div>
-            </StyledButton>
-        </Link>
+            </Link>
+        </StyledButton>
     )
 }
 

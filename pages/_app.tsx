@@ -33,7 +33,7 @@ export default function MyApp(props: MyAppProps) {
         <CacheProvider value={emotionCache}>
             <AppContext.Provider value={{ language, setLanguage }}>
                 <Head>
-                    <meta name="viewport" content="initial-scale=1, width=device-width" />
+                    <meta name='viewport' content='initial-scale=1, width=device-width' />
                 </Head>
                 <ThemeProvider theme={theme}>
                     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
@@ -42,7 +42,7 @@ export default function MyApp(props: MyAppProps) {
                     <Box
                         sx={{
                             background: `linear-gradient(${theme.palette.primary.main}, ${theme.palette.primary.dark})`,
-                            minHeight: { xs: 'auto', md: '100vh' },
+                            minHeight: '100vh',
                         }}
                     >
                         <AnimatePresence
