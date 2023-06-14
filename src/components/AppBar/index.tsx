@@ -170,6 +170,7 @@ const ResponsiveAppBar = () => {
                                 vertical: 'top',
                                 horizontal: 'right',
                             }}
+                            disableScrollLock
                             open={Boolean(anchorElSettings)}
                             onClose={handleCloseSettingsMenu}
                             color='primary'

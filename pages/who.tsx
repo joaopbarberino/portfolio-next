@@ -1,176 +1,28 @@
 import Layout from '@/components/Layout';
-import { Box } from '@mui/material'
+import StyledWhoContainer from '@/styles/who';
+import { Box, Container, Typography } from '@mui/material';
+import data from '@/helpers/data.json';
+import { useContext } from 'react';
+import AppContext from '@/services/AppContext';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Who = () => {
+    const { language } = useContext(AppContext);
+
     return (
         <Layout>
-            <Box sx={{}}>
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
+            <StyledWhoContainer maxWidth='xl'>
+                <Typography variant='h1' className='title'><AccountCircleIcon /> {data[language].who.title}</Typography>
 
+                <div className='content'>
+                    {
+                        data[language].who.text.map(
+                            text =>
+                                <Typography variant='body1' key={text} dangerouslySetInnerHTML={{ __html: text }} />
+                        )
+                    }
                 </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-
-                <div>
-                    oi
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis sed dicta modi esse voluptate quae tenetur, amet porro nam officia perferendis consequuntur minus tempora eius aliquid dolor odit obcaecati?
-
-                </div>
-            </Box>
+            </StyledWhoContainer>
         </Layout>
     )
 };

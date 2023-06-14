@@ -9,6 +9,7 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import { AnimatePresence } from 'framer-motion'
 import { Box } from '@mui/material';
 import AppBar from '@/components/AppBar';
+import Footer from '@/components/Footer';
 import theme from '@/themes';
 
 import AppContext from '@/services/AppContext';
@@ -53,6 +54,7 @@ export default function MyApp(props: MyAppProps) {
                             <Component {...pageProps} key={pathname} />
                         </AnimatePresence>
                     </Box>
+                    <Footer />
                 </ThemeProvider>
             </AppContext.Provider>
         </CacheProvider>

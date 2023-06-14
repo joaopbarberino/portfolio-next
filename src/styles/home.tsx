@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles';
 
-const HomeContainer = styled('div')(({ theme }) => ({
+const StyledHomeContainer = styled('div')(({ theme }) => ({
     paddingTop: 40,
     position: 'relative',
 
@@ -106,4 +106,4 @@ const HomeContainer = styled('div')(({ theme }) => ({
     }
 }));
 
-export { HomeContainer };
+export default StyledHomeContainer;

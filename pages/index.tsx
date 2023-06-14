@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Container, Typography } from '@mui/material/';
 
-import { HomeContainer } from '@/styles/home';
+import StyledHomeContainer from '@/styles/home';
 
 import AppContext from '@/services/AppContext';
 import data from '@/helpers/data.json';
@@ -16,7 +16,7 @@ const Home = () => {
 
     return (
         <Layout>
-            <HomeContainer>
+            <StyledHomeContainer>
                 <Container maxWidth='xl'>
                     <Grid container>
                         <Grid xs={12} md={6} lg={4} className='photo'>
@@ -42,7 +42,7 @@ const Home = () => {
                 </Container>
 
                 <div className='slice'></div>
-            </HomeContainer>
+            </StyledHomeContainer>
         </Layout>
     );
 };
