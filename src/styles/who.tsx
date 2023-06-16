@@ -3,20 +3,37 @@ import { styled } from '@mui/material/styles';
 
 const StyledWhoContainer = styled(Container)(({ theme }) => ({
     paddingTop: 120,
+    paddingBottom: 80,
 
     span: {
         color: theme.palette.secondary.main
     },
 
-    '.title': {
-        fontSize: '4rem',
+    '.title, .subtitle': {
         display: 'flex',
         alignItems: 'center',
 
         svg: {
+            color: theme.palette.secondary.main
+        }
+    },
+
+    '.title': {
+        fontSize: '4rem',
+
+        svg: {
             fontSize: '4rem',
             marginRight: 16,
-            color: theme.palette.secondary.main
+        }
+    },
+
+    '.subtitle': {
+        marginTop: 40,
+        fontSize: '2rem',
+
+        svg: {
+            fontSize: '2rem',
+            marginRight: 8,
         }
     },
 
