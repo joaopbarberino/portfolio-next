@@ -2,10 +2,16 @@ import { createRedisRecord, getAllRecordsByKey } from "@/services/redis";
 import { Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 
+interface IUser {
+    id: string;
+    nome: string;
+    idade: string;
+}
+
 export default function CreateJSON() {
     const [nome, setNome] = useState('');
     const [idade, setIdade] = useState('');
-    const [records, setRecords] = useState<{ id: string;[key: string]: any; }[]>([]);
+    const [records, setRecords] = useState<IUser[]>([]);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -20,7 +26,7 @@ export default function CreateJSON() {
     };
 
     const getRecords = async () => {
-        const newRecords = await getAllRecordsByKey('usuario');
+        const newRecords = await getAllRecordsByKey('usuario') as IUser[];
         setRecords(newRecords);
     };
 
