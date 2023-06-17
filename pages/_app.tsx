@@ -29,14 +29,15 @@ export default function MyApp(props: MyAppProps) {
     const { pathname } = useRouter();
 
     const [language, setLanguage] = React.useState<'en' | 'ptBr'>('ptBr');
+    const [customTheme, setCustomTheme] = React.useState(theme);
 
     return (
         <CacheProvider value={emotionCache}>
-            <AppContext.Provider value={{ language, setLanguage }}>
+            <AppContext.Provider value={{ language, setLanguage, customTheme, setCustomTheme }}>
                 <Head>
                     <meta name='viewport' content='initial-scale=1, width=device-width' />
                 </Head>
-                <ThemeProvider theme={theme}>
+                <ThemeProvider theme={customTheme}>
                     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
                     <CssBaseline />
                     <AppBar />

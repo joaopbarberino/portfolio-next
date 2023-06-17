@@ -70,6 +70,27 @@ const defaultTheme = createTheme({
 					userSelect: 'none',
 				}
 			}
+		},
+		MuiInputBase: {
+			styleOverrides: {
+				root: {
+					input: {
+						color: 'white'
+					},
+					fieldset: {
+						borderColor: 'white',
+					},
+				}
+			}
+		},
+		MuiDialog: {
+			styleOverrides: {
+				root: {
+					'.MuiPaper-root': {
+						backgroundColor: colorSchemes.palette.primary.light
+					}
+				}
+			}
 		}
 	}
 });

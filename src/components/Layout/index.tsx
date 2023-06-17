@@ -33,19 +33,19 @@ const Layout: React.FC<ILayoutProps> = ({ children, title, description }) => {
     const [variants, setVariants] = useState(variantsToRight);
 
     const routes: IRoute[] = data.en.header.map((item, index) => { return { pathname: item.link, weight: index } });
-
+    
     useEffect(() => {
         router.events.on('routeChangeStart', (url) => {
             const nextRoute: IRoute | undefined = routes.filter(route => route.pathname === url)[0];
             const currentRoute: IRoute | undefined = routes.filter(route => route.pathname === router.pathname)[0];
-            
+
             if (nextRoute && currentRoute) {
                 if (nextRoute.weight > currentRoute.weight) {
                     setVariants(variantsToLeft);
                 } else {
                     setVariants(variantsToRight);
                 }
-            }; 
+            };
         });
     });
 

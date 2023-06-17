@@ -5,6 +5,7 @@ import React, { useState, useContext } from 'react';
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, MenuItem, Container, Button, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import TranslateIcon from '@mui/icons-material/Translate';
+import PaletteIcon from '@mui/icons-material/Palette';
 import Logo from './logo';
 import Link from '@/components/Link';
 
@@ -12,6 +13,7 @@ import data from '@/helpers/data.json';
 import AppContext from '@/services/AppContext';
 import { useRouter } from 'next/router';
 import defaultTheme from '@/themes';
+import ThemeEditorDialog from '../ThemeEditorDialog';
 
 const settings: { title: string, value: 'en' | 'ptBr' }[] = [
     {
@@ -30,6 +32,7 @@ const ResponsiveAppBar = () => {
 
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
     const [anchorElSettings, setAnchorElSettings] = useState<null | HTMLElement>(null);
+    const [openThemeEditorDialog, setOpenThemeEditorDialog] = useState(false);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -76,7 +79,7 @@ const ResponsiveAppBar = () => {
                             aria-haspopup='true'
                             onClick={handleOpenNavMenu}
                             color='inherit'
-                            sx={{ p: 0}}
+                            sx={{ p: 0 }}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -151,8 +154,13 @@ const ResponsiveAppBar = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
+                        <Tooltip title={language === 'en' ? 'Theme editor' : 'Editor de temas'} arrow>
+                            <IconButton sx={{ p: 0 }} onClick={() => setOpenThemeEditorDialog(true)}>
+                                <PaletteIcon color='secondary' />
+                            </IconButton>
+                        </Tooltip>
                         <Tooltip title={language === 'en' ? 'Change language' : 'Trocar idioma'} arrow>
-                            <IconButton onClick={handleOpenSettingsMenu} sx={{ p: 0 }} >
+                            <IconButton sx={{ p: 0, ml: 1.5 }} onClick={handleOpenSettingsMenu}>
                                 <TranslateIcon color='secondary' />
                             </IconButton>
                         </Tooltip>
@@ -182,6 +190,11 @@ const ResponsiveAppBar = () => {
                         </Menu>
                     </Box>
                 </Toolbar>
+
+                <ThemeEditorDialog
+                    open={openThemeEditorDialog}
+                    onClose={() => setOpenThemeEditorDialog(false)}
+                />
             </Container>
         </AppBar>
     );
