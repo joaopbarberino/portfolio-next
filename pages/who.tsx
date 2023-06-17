@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import AppContext from '@/services/AppContext';
 import MoodIcon from '@mui/icons-material/Mood';
 import BusinessIcon from '@mui/icons-material/Business';
-import SchoolIcon from '@mui/icons-material/School';
+import SchoolIcon from '@mui/icons-material/School'; 
 
 const Who = () => {
     const { language } = useContext(AppContext);

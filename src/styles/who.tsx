@@ -2,7 +2,7 @@ import { Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const StyledWhoContainer = styled(Container)(({ theme }) => ({
-    paddingTop: 120,
+    paddingTop: 90,
     paddingBottom: 80,
 
     span: {
@@ -20,11 +20,6 @@ const StyledWhoContainer = styled(Container)(({ theme }) => ({
 
     '.title': {
         fontSize: '4rem',
-
-        svg: {
-            fontSize: '4rem',
-            marginRight: 16,
-        }
     },
 
     '.subtitle': {
@@ -46,8 +41,15 @@ const StyledWhoContainer = styled(Container)(({ theme }) => ({
             fontSize: '1.4rem',
             marginTop: 20,
         }
-    }
+    },
 
+    [theme.breakpoints.down('sm')]: {
+        paddingTop: 70,
+
+        '.title': {
+            fontSize: '3rem',
+        },
+    }
 }));
 
 export default StyledWhoContainer;

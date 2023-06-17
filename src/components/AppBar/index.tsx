@@ -138,7 +138,6 @@ const ResponsiveAppBar = () => {
                                         textAlign: 'center',
                                         color: 'white',
                                         display: 'block',
-                                        borderLeft: pathname === item.link ? `2px solid ${defaultTheme.palette.secondary.light}` : 'none',
                                         borderBottom: pathname === item.link ? `2px solid ${defaultTheme.palette.secondary.light}` : 'none',
                                         borderRadius: 0
                                     }}
