@@ -1,7 +1,10 @@
 import { useContext, useState, useEffect } from 'react';
 
-import { createTheme } from '@mui/material/styles';
-import { Dialog, DialogTitle, DialogContent, DialogActions, Typography, TextField, Button, FormControlLabel, Switch } from '@mui/material';
+import { createTheme, rgbToHex } from '@mui/material/styles';
+import {
+    Dialog, DialogTitle, DialogContent, DialogActions,
+    Typography, TextField, Button, FormControlLabel, Switch
+} from '@mui/material';
 import PaletteIcon from '@mui/icons-material/Palette';
 import defaultTheme from '@/themes';
 
@@ -51,10 +54,9 @@ const ThemeEditorDialog = (props: IThemeEditorDialogProps) => {
     };
 
     useEffect(() => {
-        if (customTheme !== defaultTheme) {
-            setLight(customTheme.palette.secondary.light);
-            setDark(customTheme.palette.secondary.dark);
-        };
+        setLight(customTheme.palette.secondary.light);
+        setMain(customTheme.palette.secondary.main);
+        setDark(customTheme.palette.secondary.dark);
     }, [customTheme]);
 
     return (
@@ -66,18 +68,21 @@ const ThemeEditorDialog = (props: IThemeEditorDialogProps) => {
 
             <DialogContent sx={{ display: 'flex', flexDirection: 'column' }}>
                 <Typography>{language === 'en' ? 'Play with the site colors!' : 'Brinque com as cores do site!'} 😄</Typography>
+                <Typography sx={{ fontSize: '0.8em' }}>({language === 'en' ? 'Just because I think it\'s fun' : 'Só porque eu acho divertido mesmo'})</Typography>
                 <TextField
                     label='Light'
+                    type='color'
                     variant='outlined'
                     color='secondary'
                     InputLabelProps={{ sx: { color: customTheme.palette.secondary.light } }}
-                    value={light}
+                    value={rgbToHex(light)}
                     onChange={(e) => setLight(e.target.value)}
                     disabled={defineOnlyMain}
                     sx={{ mt: 2 }}
                 />
                 <TextField
                     label='Main'
+                    type='color'
                     variant='outlined'
                     color='secondary'
                     InputLabelProps={{ sx: { color: customTheme.palette.secondary.light } }}
@@ -87,10 +92,11 @@ const ThemeEditorDialog = (props: IThemeEditorDialogProps) => {
                 />
                 <TextField
                     label='Dark'
+                    type='color'
                     variant='outlined'
                     color='secondary'
                     InputLabelProps={{ sx: { color: customTheme.palette.secondary.light } }}
-                    value={dark}
+                    value={rgbToHex(dark)}
                     onChange={(e) => setDark(e.target.value)}
                     disabled={defineOnlyMain}
                 />
@@ -103,8 +109,11 @@ const ThemeEditorDialog = (props: IThemeEditorDialogProps) => {
                 />
             </DialogContent>
 
-            <DialogActions sx={{ padding: 3, justifyContent: 'space-around' }}>
-                <Button variant='contained' color='secondary' onClick={updateTheme}>
+            <DialogActions sx={{ padding: 3, justifyContent: 'center' }}>
+                <Button variant='contained' color='secondary' onClick={() => setCustomTheme(defaultTheme)}>
+                    {language === 'en' ? 'Default theme' : 'Tema padrão'}
+                </Button>
+                <Button variant='contained' color='success' onClick={updateTheme}>
                     {language === 'en' ? 'Change theme!' : 'Trocar tema!'}
                 </Button>
             </DialogActions>

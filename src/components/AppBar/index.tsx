@@ -12,7 +12,6 @@ import Link from '@/components/Link';
 import data from '@/helpers/data.json';
 import AppContext from '@/services/AppContext';
 import { useRouter } from 'next/router';
-import defaultTheme from '@/themes';
 import ThemeEditorDialog from '../ThemeEditorDialog';
 
 const settings: { title: string, value: 'en' | 'ptBr' }[] = [
@@ -27,7 +26,7 @@ const settings: { title: string, value: 'en' | 'ptBr' }[] = [
 ];
 
 const ResponsiveAppBar = () => {
-    const { language, setLanguage } = useContext(AppContext);
+    const { language, setLanguage, customTheme } = useContext(AppContext);
     const { pathname } = useRouter();
 
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
@@ -108,7 +107,7 @@ const ResponsiveAppBar = () => {
                                         component={Link}
                                         href={item.link}
                                         color='white'
-                                        borderBottom={pathname === item.link ? `2px solid ${defaultTheme.palette.secondary.light}` : 'none'}
+                                        borderBottom={pathname === item.link ? `2px solid ${customTheme.palette.secondary.light}` : 'none'}
                                     >
                                         {item.text}
                                     </Typography>
@@ -141,7 +140,7 @@ const ResponsiveAppBar = () => {
                                         textAlign: 'center',
                                         color: 'white',
                                         display: 'block',
-                                        borderBottom: pathname === item.link ? `2px solid ${defaultTheme.palette.secondary.light}` : 'none',
+                                        borderBottom: pathname === item.link ? `2px solid ${customTheme.palette.secondary.light}` : 'none',
                                         borderRadius: 0
                                     }}
                                     LinkComponent={Link}
