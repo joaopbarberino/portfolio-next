@@ -1,12 +1,14 @@
 import Layout from '@/components/Layout';
 import StyledWhoContainer from '@/styles/who';
-import { Box, Container, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import data from '@/helpers/data.json';
 import { useContext } from 'react';
 import AppContext from '@/services/AppContext';
 import MoodIcon from '@mui/icons-material/Mood';
 import BusinessIcon from '@mui/icons-material/Business';
-import SchoolIcon from '@mui/icons-material/School'; 
+import SchoolIcon from '@mui/icons-material/School';
+import PageChangeButton from '@/components/PageChangeButton';
+import PageActionsContainer from '@/components/PageActionsContainer';
 
 const Who = () => {
     const { language } = useContext(AppContext);
@@ -45,6 +47,12 @@ const Who = () => {
                         )
                     }
                 </div>
+
+                <PageActionsContainer>
+                    <PageChangeButton href={data[language].header[0].link} text={data[language].header[0].text} type='prev' />
+                    <PageChangeButton href={data[language].header[2].link} text={data[language].header[2].text} />
+                </PageActionsContainer>
+
             </StyledWhoContainer>
         </Layout>
     )

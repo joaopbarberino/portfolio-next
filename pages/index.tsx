@@ -8,7 +8,7 @@ import StyledHomeContainer from '@/styles/home';
 
 import AppContext from '@/services/AppContext';
 import data from '@/helpers/data.json';
-import HomeButton from '@/components/HomeButton';
+import PageChangeButton from '@/components/PageChangeButton';
 import Layout from '@/components/Layout';
 
 const Home = () => {
@@ -36,7 +36,7 @@ const Home = () => {
                             {
                                 data[language].home.text.map(text => <Typography variant='h4' key={text} dangerouslySetInnerHTML={{ __html: text }} />)
                             }
-                            <HomeButton text={data[language].home.button} href='/who' />
+                            <PageChangeButton text={data[language].home.button} href='/who' />
                         </Grid>
                     </Grid>
                 </Container>

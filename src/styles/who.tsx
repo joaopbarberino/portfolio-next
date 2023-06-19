@@ -40,6 +40,10 @@ const StyledWhoContainer = styled(Container)(({ theme }) => ({
         p: {
             fontSize: '1.4rem',
             marginTop: 20,
+        },
+
+        button: {
+            marginTop: '40px important',
         }
     },
 

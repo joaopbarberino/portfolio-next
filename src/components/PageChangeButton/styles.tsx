@@ -12,7 +12,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
     width: 300,
     height: 70,
     lineHeight: 70,
-    margin: '75px auto',
+    margin: '10px',
     color: 'black',
     position: 'relative',
     inset: 0,
@@ -33,7 +33,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
     span: {
         width: '72%',
         lineHeight: 'inherit',
-        fontSize: 30,
+        fontSize: '1.6rem',
         textTransform: 'uppercase',
         left: 0,
         transition: transition,
@@ -86,8 +86,36 @@ const StyledButton = styled(Button)(({ theme }) => ({
         opacity: 1,
     },
 
+    '&.prev': {
+        span: {
+            left: 'unset',
+            right: 0,
+
+            '&:after': {
+                right: 'unset',
+                left: 0
+            },
+        },
+
+        '.icon': {
+            right: 'unset',
+            left: 0,
+            transform: 'rotate(180deg)'
+        },
+
+        '&:hover': {
+            span: {
+                right: '-72%',
+            },
+        },
+    },
+
     [theme.breakpoints.down('sm')]: {
         width: 260,
+
+        span: {
+            fontSize: '1.4rem',
+        }
     }
 }));
 

@@ -6,14 +6,15 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import StyledButton from './styles';
 import Link from '@/components/Link';
 
-interface IHomeButtonProps {
+interface IPageChangeButtonProps {
     text: string;
     href: string;
+    type?: 'next' | 'prev';
 }
 
-const HomeButton: React.FC<IHomeButtonProps> = ({ text, href }) => {
+const PageChangeButton: React.FC<IPageChangeButtonProps> = ({ text, href, type = 'next' }) => {
     return (
-        <StyledButton role='button'>
+        <StyledButton role='button' className={type}>
             <Link href={href}>
                 <span>{text}</span>
 
@@ -25,4 +26,4 @@ const HomeButton: React.FC<IHomeButtonProps> = ({ text, href }) => {
     )
 }
 
-export default HomeButton;
+export default PageChangeButton;

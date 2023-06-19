@@ -6,6 +6,8 @@ import { Box, Container, Typography, LinearProgress } from '@mui/material';
 import { useContext } from 'react';
 import AppContext from '@/services/AppContext';
 import BoltIcon from '@mui/icons-material/Bolt';
+import PageActionsContainer from '@/components/PageActionsContainer';
+import PageChangeButton from '@/components/PageChangeButton';
 
 const Who = () => {
     const { language } = useContext(AppContext);
@@ -37,6 +39,11 @@ const Who = () => {
                         }
                     </div>
                 </div>
+
+                <PageActionsContainer>
+                    <PageChangeButton href={data[language].header[1].link} text={data[language].header[1].text} type='prev' />
+                    <PageChangeButton href={data[language].header[3].link} text={data[language].header[3].text} />
+                </PageActionsContainer>
 
             </StyledSkillsContainer>
         </Layout>

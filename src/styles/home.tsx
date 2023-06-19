@@ -41,6 +41,10 @@ const StyledHomeContainer = styled('div')(({ theme }) => ({
 
         span: {
             color: theme.palette.secondary.main
+        },
+
+        button: {
+            margin: '75px auto'
         }
     },
 
