@@ -1,5 +1,6 @@
 import { Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { roboto } from '@/themes';
 
 const StyledSkillsContainer = styled(Container)(({ theme }) => ({
     paddingTop: 90,
@@ -31,10 +32,18 @@ const StyledSkillsContainer = styled(Container)(({ theme }) => ({
 
         '.skills': {
             '.skill': {
-                marginTop: 20,
+                marginTop: 30,
 
                 h5: {
                     marginBottom: 10,
+                },
+
+                '.label-phrase': {
+                    fontSize: '1rem',
+                    left: 10,
+                    fontWeight: '700',
+                    textTransform: 'uppercase',
+                    letterSpacing: 2,
                 },
 
                 // Animation adapted from https://6-4-0--reactstrap.netlify.app/components/progress/
@@ -43,10 +52,11 @@ const StyledSkillsContainer = styled(Container)(({ theme }) => ({
                     border: `3px solid ${theme.palette.secondary.dark}`,
                     position: 'relative',
                     padding: 4,
+                    height: 50,
 
                     '.progress-bar': {
                         height: 35,
-                        backgroundColor: theme.palette.secondary.light,
+                        backgroundColor: theme.palette.secondary.main,
                         transition: 'all 1.5s',
                         animation: 'progress-bar-stripes 1s linear infinite',
                         backgroundImage: `linear-gradient(
@@ -76,12 +86,6 @@ const StyledSkillsContainer = styled(Container)(({ theme }) => ({
                         '100%': {
                             backgroundPosition: '0 0',
                         }
-                    },
-
-                    '.progress-bar-animated': {
-                    },
-
-                    '.progress-bar-striped': {
                     },
                 }
             }

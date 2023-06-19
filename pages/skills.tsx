@@ -9,6 +9,35 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import PageActionsContainer from '@/components/PageActionsContainer';
 import PageChangeButton from '@/components/PageChangeButton';
 
+interface ILabelPhrases {
+    cap: number,
+    'en': string;
+    'ptBr': string
+};
+
+const LABEL_PHRASES: ILabelPhrases[] = [
+    {
+        cap: 25,
+        'en': 'Familiar',
+        'ptBr': 'Familiar'
+    },
+    {
+        cap: 50,
+        'en': 'Intermediate',
+        'ptBr': 'Intermediário'
+    },
+    {
+        cap: 75,
+        'en': 'Proficient',
+        'ptBr': 'Proficiente'
+    },
+    {
+        cap: 100,
+        'en': 'Expert',
+        'ptBr': 'Expert'
+    }
+];
+
 const Who = () => {
     const { language } = useContext(AppContext);
 
@@ -24,6 +53,9 @@ const Who = () => {
                             data[language].skills.strengths.map(skill =>
                                 <div className='skill' key={skill.name}>
                                     <Typography variant='h5' dangerouslySetInnerHTML={{ __html: skill.name }} />
+                                    <Typography className={`label-phrase`}>
+                                        {LABEL_PHRASES.filter(label => skill.value <= label.cap)[0][language]}
+                                    </Typography>
                                     <div className='progress-container'>
                                         <div
                                             className='progress-bar'
