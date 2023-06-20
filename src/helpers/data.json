@@ -162,7 +162,10 @@
         },
         "contact": {
             "title": "Contact",
-            "text": "If you want to <span>talk</span>, you can find me on <span>LinkedIn</span> or send me an <span>email</span>:"
+            "text": [
+                "Let's talk <span>talk</span>?",
+                "Or reach me out on my <span>socials</span>:"
+            ]
         }
     },
     "ptBr": {
@@ -185,7 +188,7 @@
             },
             {
                 "text": "Contato",
-                "link": "/contato"
+                "link": "/contact"
             }
         ],
         "home": {
@@ -332,7 +335,10 @@
         },
         "contact": {
             "title": "Contato",
-            "text": "Caso queira <span>conversar</span>, você pode me encontrar no <span>LinkedIn</span> ou me mandar um <span>email</span>:"
+            "text": [
+                "Vamos <span>conversar</span>?",
+                "Ou pelas minhas <span>redes</span>:"
+            ]
         }
     }
 }

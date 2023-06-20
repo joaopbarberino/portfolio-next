@@ -36,10 +36,6 @@ const colorSchemes = createTheme({
 			main: cyan[700],
 			dark: cyan[800],
 		},
-
-		error: {
-			main: red.A400,
-		},
 	},
 });
 
@@ -79,9 +75,20 @@ const defaultTheme = createTheme({
 					},
 					fieldset: {
 						borderColor: 'white',
+						color: 'white'
 					},
+					textarea: {
+						color: 'white'
+					}
 				}
 			}
+		},
+		MuiInputLabel:{
+			styleOverrides: {
+				root: {
+					color: 'white'
+				}
+			},
 		},
 		MuiDialog: {
 			styleOverrides: {
