@@ -2,7 +2,7 @@ import { ChangeEvent, useContext, useState } from 'react';
 import Layout from '@/components/Layout';
 import AppContext from '@/services/AppContext';
 import StyledContactContainer from '@/styles/contact';
-import { Button, Typography, TextField, Snackbar, Alert, CircularProgress, IconButton } from '@mui/material';
+import { Typography, TextField, Snackbar, Alert, CircularProgress, IconButton } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import data from '@/helpers/data.json';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
