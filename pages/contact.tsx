@@ -114,12 +114,6 @@ const Contact = () => {
     };
 
     const handleFormChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        console.log(e);
-        console.log({
-            ...formData,
-            [e.target.id]: e.target.value
-        })
-
         setFormData({
             ...formData,
             [e.target.id]: e.target.value
@@ -223,6 +217,8 @@ const Contact = () => {
                             color='secondary'
                             open={formState.sent}
                             key={'vertical + horizontal'}
+                            autoHideDuration={3000}
+                            onClose={() => handleCloseSnack()}
                         >
                             <Alert
                                 onClose={() => handleCloseSnack()}

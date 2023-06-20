@@ -163,7 +163,7 @@
         "contact": {
             "title": "Contact",
             "text": [
-                "Let's talk <span>talk</span>?",
+                "Let's <span>talk</span>?",
                 "Or reach me out on my <span>socials</span>:"
             ]
         }
