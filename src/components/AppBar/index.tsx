@@ -2,6 +2,7 @@
 
 import React, { useState, useContext } from 'react';
 
+import { useScroll, useSpring } from 'framer-motion';
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, MenuItem, Container, Button, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import TranslateIcon from '@mui/icons-material/Translate';
@@ -13,6 +14,7 @@ import data from '@/helpers/data.json';
 import AppContext from '@/services/AppContext';
 import { useRouter } from 'next/router';
 import ThemeEditorDialog from '../ThemeEditorDialog';
+import { StyledProgressBar } from './styles';
 
 const settings: { title: string, value: 'en' | 'ptBr' }[] = [
     {
@@ -28,6 +30,12 @@ const settings: { title: string, value: 'en' | 'ptBr' }[] = [
 const ResponsiveAppBar = () => {
     const { language, setLanguage, customTheme } = useContext(AppContext);
     const { pathname } = useRouter();
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 20,
+        restDelta: 0.001
+    });
 
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
     const [anchorElSettings, setAnchorElSettings] = useState<null | HTMLElement>(null);
@@ -195,6 +203,10 @@ const ResponsiveAppBar = () => {
                     onClose={() => setOpenThemeEditorDialog(false)}
                 />
             </Container>
+            {
+                pathname !== '/' &&
+                <StyledProgressBar style={{ scaleX: scaleX }} />
+            }
         </AppBar>
     );
 }

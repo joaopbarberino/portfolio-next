@@ -1,4 +1,5 @@
 import { styled } from '@mui/material/styles';
+import { motion, useScroll } from 'framer-motion'
 
 const StyledLogo = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -36,4 +37,14 @@ const StyledLogo = styled('div')(({ theme }) => ({
     }
 }));
 
-export { StyledLogo };
+const StyledProgressBar = styled(motion.div)(({ theme }) => ({
+    backgroundColor: theme.palette.secondary.light,
+    position: 'fixed',
+    height: 4,
+    top: 0,
+    left: 0,
+    right: 0,
+    transformOrigin: '0%',
+}));
+
+export { StyledLogo, StyledProgressBar };
