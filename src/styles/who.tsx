@@ -5,6 +5,10 @@ const StyledWhoContainer = styled(Container)(({ theme }) => ({
     paddingTop: 90,
     paddingBottom: 80,
 
+    span: {
+        color: theme.palette.secondary.main
+    },
+
     '.title, .subtitle': {
         display: 'flex',
         alignItems: 'center',
