@@ -27,6 +27,28 @@ const StyledProjectsContainer = styled(Container)(({ theme }) => ({
                 color: theme.palette.secondary.main,
             },
         },
+
+        '.MuiToggleButtonGroup-root': {
+            marginTop: 20,
+
+            button: {
+                borderColor: theme.palette.secondary.main,
+                color: 'white',
+                
+                '&.Mui-selected': {
+                    color: theme.palette.secondary.main,
+                },
+
+                svg: {
+                    marginRight: 6
+                }
+            },
+        },
+
+        '.projects-container': {
+            marginTop: '20px',
+
+        },
     },
 
     [theme.breakpoints.down('sm')]: {

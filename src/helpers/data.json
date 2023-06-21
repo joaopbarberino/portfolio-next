@@ -95,68 +95,90 @@
                 {
                     "name": "CI - Central de Intercâmbio",
                     "link": "https://www.ci.com.br",
-                    "img": "/img/ci.png",
-                    "text": "One of our <span>biggest clients</span> at JP7, <span>CI is the biggest name on exchange programs in Brazil</span> and even has some units in other countries. We’ve been <span>responsible for their sites for years</span>. There, I’ve been providing <span>maintenance</span> since I entered, taking <span>requests from the client</span>, such as add new pages, edit old ones and even delete or change their locations – following the system which was already established. It's made mainly on <span>Laravel</span>, <span>Bootstrap</span> and <span>Javascript</span>, using an <span>intern CMS</span> to edit data. I’ve been also involved in the environment configuration to <span>test</span> some functionalities on <span>React</span>."
+                    "img": "/img/projects/ci.png",
+                    "text": "One of our <span>biggest clients</span> at JP7, <span>CI is the biggest name on exchange programs in Brazil</span> and even has some units in other countries. We’ve been <span>responsible for their sites for years</span>. There, I’ve been providing <span>maintenance</span> since I entered, taking <span>requests from the client</span>, such as add new pages, edit old ones and even delete or change their locations – following the system which was already established. It's made mainly on <span>Laravel</span>, <span>Bootstrap</span> and <span>Javascript</span>, using an <span>intern CMS</span> to edit data. I’ve been also involved in the environment configuration to <span>test</span> some functionalities on <span>React</span>.",
+                    "type": "1",
+                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "CI - Feira Trabalhar e Estudar",
                     "link": "https://feiratrabalhar.ci.com.br",
-                    "img": "/img/ci-feira.png",
-                    "text": "It’s a <span>hotsite</span> developed some time ago to publicize the company’s <span>annual event</span>. By the end of <span>2019</span>, I was <span>responsible to update the whole website structure</span>, mainly the styles, to the new layout. Uses the <span>very same technologies</span> of the main website."
+                    "img": "/img/projects/ci-feira.png",
+                    "text": "It’s a <span>hotsite</span> developed some time ago to publicize the company’s <span>annual event</span>. By the end of <span>2019</span>, I was <span>responsible to update the whole website structure</span>, mainly the styles, to the new layout. Uses the <span>very same tech</span> of the main website.",
+                    "type": "1",
+                    "tech": ["JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "CI - Intercâmbio Zion",
                     "link": "https://intercambiozion.com.br",
-                    "img": "/img/ci-zion.png",
-                    "text": "The client has <span>requested another provider</span> a simple <span>Wordpress</span> hotsite to test this <span>new product</span>. Sometime later <span>2019</span>, they <span>asked us</span> to control it by the <span>CMS already provided and integrated to the other company’s websites</span>. As we <span>avoid</span> work with <span>Wordpress</span>, I was <span>responsible to redo the website on React</span>, using <span>Styled Components</span>, <span>Redux-form</span>, <span>Apollo</span>, <span>GraphQL</span> and <span>Next.js for SSR</span> as well."
+                    "img": "/img/projects/ci-zion.png",
+                    "text": "The client has <span>requested another provider</span> a simple <span>Wordpress</span> hotsite to test this <span>new product</span>. Sometime later <span>2019</span>, they <span>asked us</span> to control it by the <span>CMS already provided and integrated to the other company’s websites</span>. As we <span>avoid</span> work with <span>Wordpress</span>, I was <span>responsible to redo the website on React</span>, using <span>Styled Components</span>, <span>Redux-form</span>, <span>Apollo</span>, <span>GraphQL</span> and <span>Next.js for SSR</span> as well.",
+                    "type": "1",
+                    "tech": ["React", "JavaScript", "GraphQL", "PHP"]
                 },
                 {
                     "name": "Abipe",
                     "link": "https://www.abipe.org.br",
-                    "img": "/img/abipe.png",
-                    "text": "A <span>no-profit company of CI Group</span>, their website counts with an exclusive area to its users, where they realize some <span>financial transactions</span>. By the start of <span>2020</span>, I was <span>responsible to change the PagSeguro</span> (a kind of Brazillian PayPal, responsible for the payments) <span>PHP library</span> of the <span>old version</span> to the <span>new one</span>, which resulted on an <span>extensive review and adaptation of the already established payment flux</span>."
+                    "img": "/img/projects/abipe.png",
+                    "text": "A <span>no-profit company of CI Group</span>, their website counts with an exclusive area to its users, where they realize some <span>financial transactions</span>. By the start of <span>2020</span>, I was <span>responsible to change the PagSeguro</span> (a kind of Brazillian PayPal, responsible for the payments) <span>PHP library</span> of the <span>old version</span> to the <span>new one</span>, which resulted on an <span>extensive review and adaptation of the already established payment flux</span>.",
+                    "type": "1",
+                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "Multicarepharma",
                     "link": "https://www.multicarepharma.com",
-                    "img": "/img/multicare.png",
-                    "text": "A subsidiary of Expressa Group, Multicare is <span>responsible to provide medicines</span> (normally imported) to <span>patients with rare diseases</span>. It was my first <span>big project</span>, I made it in <span>2019</span> July. Uses <span>React</span>, <span>Redux-form</span>, <span>Styled Components</span>, <span>Apollo</span>, <span>GraphQL</span> and an <span>intern CMS</span> to edit data."
+                    "img": "/img/projects/multicare.png",
+                    "text": "A subsidiary of Expressa Group, Multicare is <span>responsible to provide medicines</span> (normally imported) to <span>patients with rare diseases</span>. It was my first <span>big project</span>, I made it in <span>2019</span> July. Uses <span>React</span>, <span>Redux-form</span>, <span>Styled Components</span>, <span>Apollo</span>, <span>GraphQL</span> and an <span>intern CMS</span> to edit data.",
+                    "type": "1",
+                    "tech": ["React", "JavaScript", "GraphQL", "PHP"]
                 },
                 {
                     "name": "JP7",
                     "link": "https://www.jp7.com.br",
-                    "img": "/img/jp7.png",
-                    "text": "As part of my <span>role</span> in the company, by the start of <span>2020</span>, I was <span>responsible to update the PHP and Node of all our projects</span>, which resulted in <span>various packages and unit tests updates and reviews and errors solutions</span>. You can learn more about them on the company website!"
+                    "img": "/img/projects/jp7.png",
+                    "text": "As part of my <span>role</span> in the company, by the start of <span>2020</span>, I was <span>responsible to update the PHP and Node of all our projects</span>, which resulted in <span>various packages and unit tests updates and reviews and errors solutions</span>. You can learn more about them on the company website!",
+                    "type": "1",
+                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "Fight, Lord Willow!",
                     "link": "https://github.com/joaopbarberino/Fight-Lord-Willow-",
-                    "img": "/img/fight-lord.png",
-                    "text": "Developed in a <span>group</span> to a <span>college semesterly project</span> in <span>2019</span>, it's a <span>Tower Defense game</span>, for <span>Windows</span>. Although it’s a little <span>imbalanced</span>, (monsters’ life, towers damage, rewards etc.), I’m very proud of it because it was <span>made completely on Java</span>. The <span>path</span> that the monsters choose is <span>decided by artificial intelligence</span>, what would make the game <span>expansion</span>, or just the map alteration, very simple on that topic. I was <span>responsible for the project management</span>, <span>part of game design</span> and <span>core game mechanics implementations</span>, which are also <span>scalable</span>. You can <span>play it for free</span> by <span>downloading</span> the repository and <span>executing the .exe</span> file."
+                    "img": "/img/projects/fight-lord.png",
+                    "text": "Developed in a <span>group</span> to a <span>college semesterly project</span> in <span>2019</span>, it's a <span>Tower Defense game</span>, for <span>Windows</span>. Although it’s a little <span>imbalanced</span>, (monsters’ life, towers damage, rewards etc.), I’m very proud of it because it was <span>made completely on Java</span>. The <span>path</span> that the monsters choose is <span>decided by artificial intelligence</span>, what would make the game <span>expansion</span>, or just the map alteration, very simple on that topic. I was <span>responsible for the project management</span>, <span>part of game design</span> and <span>core game mechanics implementations</span>, which are also <span>scalable</span>. You can <span>play it for free</span> by <span>downloading</span> the repository and <span>executing the .exe</span> file.",
+                    "type": "0",
+                    "tech": ["Java"]
                 },
                 {
                     "name": "Meteor Hunt",
                     "link": "https://github.com/waffliors/meteor-hunt",
-                    "img": "/img/meteor-hunt.png",
-                    "text": "Developed in a <span>group</span> to a <span>college semesterly project</span> in <span>2018</span>, it's a <span>Shooter game</span> based on Atari’s Asteroids, for <span>Windows</span>. <span>Made completely in Python</span>, using the <span>pygame library</span>. We weren’t capable of achieving all that we planned, but the game is <span>fully functional</span> and <span>fun</span>. Besides <span>taking part in planning</span>, <span>game design and other things</span>, my <span>bigger triumph</span> here was the <span>save system</span>: the highscores are saved locally on the user’s computer. You can <span>play it for free</span> by <span>downloading</span> the repository and <span>executing the .exe</span> file."
+                    "img": "/img/projects/meteor-hunt.png",
+                    "text": "Developed in a <span>group</span> to a <span>college semesterly project</span> in <span>2018</span>, it's a <span>Shooter game</span> based on Atari’s Asteroids, for <span>Windows</span>. <span>Made completely in Python</span>, using the <span>pygame library</span>. We weren’t capable of achieving all that we planned, but the game is <span>fully functional</span> and <span>fun</span>. Besides <span>taking part in planning</span>, <span>game design and other things</span>, my <span>bigger triumph</span> here was the <span>save system</span>: the highscores are saved locally on the user’s computer. You can <span>play it for free</span> by <span>downloading</span> the repository and <span>executing the .exe</span> file.",
+                    "type": "0",
+                    "tech": ["Python"]
                 },
                 {
                     "name": "Cold Runner",
                     "link": "https://garahorn.itch.io/cold-runner",
-                    "img": "/img/cold-runner.png",
-                    "text": "Developed in a <span>group</span> to a <span>Game Jam</span> in <span>2020</span>, it's an <span>Endless Runner/ Platformer game</span>, about the “Cold” theme, for <span>Android</span>. <span>Made in C# with Unity 3D engine</span>. We got to implement all that we planned. I didn’t actively participate in the programming of this one, but I was <span>responsible for part of the game design</span> and for the <span>initial implementation</span> of the <span>score system</span>, besides being present from the start to the end of the project. You can <span>play it for free</span> by <span>downloading</span> and <span>installing the .apk</span> file."
+                    "img": "/img/projects/cold-runner.png",
+                    "text": "Developed in a <span>group</span> to a <span>Game Jam</span> in <span>2020</span>, it's an <span>Endless Runner/ Platformer game</span>, about the “Cold” theme, for <span>Android</span>. <span>Made in C# with Unity 3D engine</span>. We got to implement all that we planned. I didn’t actively participate in the programming of this one, but I was <span>responsible for part of the game design</span> and for the <span>initial implementation</span> of the <span>score system</span>, besides being present from the start to the end of the project. You can <span>play it for free</span> by <span>downloading</span> and <span>installing the .apk</span> file.",
+                    "type": "0",
+                    "tech": ["Unity", "C#"]
                 },
                 {
                     "name": "A Jornada de Vidar",
                     "link": "https://bit.ly/VidarGame",
-                    "img": "/img/vidar.png",
-                    "text": "Developed in a <span>group</span> as a <span>college final project</span> from <span>2019</span> to <span>2020</span>, is a <span>3D puzzle</span> with <span>adventure</span> elements and norse mythology story game. By the game, you <span>collect runes</span>, which gives you <span>powers</span>, needed to solve the <span>puzzles</span> and <span>clear the levels</span>. A boy who gets his life turned upside down from day to night can do nothing but move on. With the help of the gods he will <span>surpass</span> any <span>challenge</span> to restore his world. I participated actively of all the <span>game design</span>, <span>elaboration</span> and <span>project development</span>, being <span>responsible for part of its management</span>, <span>system developments</span>, like <span>dialogues</span> and <span>tutorial</span>, and <span>game mechanics in general</span>. Currently in <span>alpha version</span> you can <span>play it for free</span> and know more about the project (only in portuguese), as give us your feedback (english or portuguese), on the <span>link beside</span>."
+                    "img": "/img/projects/vidar.png",
+                    "text": "Developed in a <span>group</span> as a <span>college final project</span> from <span>2019</span> to <span>2020</span>, is a <span>3D puzzle</span> with <span>adventure</span> elements and norse mythology story game. By the game, you <span>collect runes</span>, which gives you <span>powers</span>, needed to solve the <span>puzzles</span> and <span>clear the levels</span>. A boy who gets his life turned upside down from day to night can do nothing but move on. With the help of the gods he will <span>surpass</span> any <span>challenge</span> to restore his world. I participated actively of all the <span>game design</span>, <span>elaboration</span> and <span>project development</span>, being <span>responsible for part of its management</span>, <span>system developments</span>, like <span>dialogues</span> and <span>tutorial</span>, and <span>game mechanics in general</span>. Currently in <span>alpha version</span> you can <span>play it for free</span> and know more about the project (only in portuguese), as give us your feedback (english or portuguese), on the <span>link beside</span>.",
+                    "type": "0",
+                    "tech": ["Unity", "C#"]
                 },
                 {
                     "name": "This website!",
                     "link": "https://github.com/joaopbarberino",
-                    "img": "/img/github.png",
-                    "text": "<span>Completely developed by me</span>, this time I even took the risk to make the layout! Made with <span>React</span> and <span>Styled Components</span>, which are <span>my favorite technologies at this moment</span>. You can see the source code, as well as of <span>other projects and studies</span> of mine that are not mentioned here, at my <span>GitHub</span>."
+                    "img": "/img/projects/github.png",
+                    "text": "<span>Completely developed by me</span>, this time I even took the risk to make the layout! Made with <span>React</span> and <span>Styled Components</span>, which are <span>my favorite tech at this moment</span>. You can see the source code, as well as of <span>other projects and studies</span> of mine that are not mentioned here, at my <span>GitHub</span>.",
+                    "type": "1",
+                    "tech": ["React", "TypeScript"]
                 }
             ]
         },
@@ -268,68 +290,90 @@
                 {
                     "name": "CI - Central de Intercâmbio",
                     "link": "https://www.ci.com.br",
-                    "img": "/img/ci.png",
-                    "text": "Um dos nossos <span>maiores clientes</span> na JP7, a <span>CI é a maior empresa de intercâmbio no Brasil</span> e possui algumas lojas em outros países. Somos <span>responsáveis pelos seus sites há anos</span>. Lá, venho fornecendo <span>manutenção</span> desde que entrei, atendendo <span>requisições do cliente</span>, como: adicionar novas páginas, editar antigas e até mesmo deletar ou mudar de lugar – seguindo o sistema que já estava lá estabelecido. É feito principalmente em <span>Laravel</span>, <span>Bootstrap</span> e <span>JavaScript</span>, usando um <span>CMS interno</span> para edição de dados. Também estive envolvido na preparação do ambiente para <span>testar</span> algumas funcionalidades em <span>React</span>."
+                    "img": "/img/projects/ci.png",
+                    "text": "Um dos nossos <span>maiores clientes</span> na JP7, a <span>CI é a maior empresa de intercâmbio no Brasil</span> e possui algumas lojas em outros países. Somos <span>responsáveis pelos seus sites há anos</span>. Lá, venho fornecendo <span>manutenção</span> desde que entrei, atendendo <span>requisições do cliente</span>, como: adicionar novas páginas, editar antigas e até mesmo deletar ou mudar de lugar – seguindo o sistema que já estava lá estabelecido. É feito principalmente em <span>Laravel</span>, <span>Bootstrap</span> e <span>JavaScript</span>, usando um <span>CMS interno</span> para edição de dados. Também estive envolvido na preparação do ambiente para <span>testar</span> algumas funcionalidades em <span>React</span>.",
+                    "type": "1",
+                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "CI - Feira Trabalhar e Estudar",
                     "link": "https://feiratrabalhar.ci.com.br",
-                    "img": "/img/ci-feira.png",
-                    "text": "Trata-se de um <span>hotsite</span> desenvolvido há algum tempo para divulgar um <span>evento anual</span> da empresa. Ao final de <span>2019</span>, fui <span>responsável por atualizar toda a estrutura do site</span>, principalmente os estilos, para o novo layout. Utiliza as <span>mesmas tecnologias</span> do site principal. "
+                    "img": "/img/projects/ci-feira.png",
+                    "text": "Trata-se de um <span>hotsite</span> desenvolvido há algum tempo para divulgar um <span>evento anual</span> da empresa. Ao final de <span>2019</span>, fui <span>responsável por atualizar toda a estrutura do site</span>, principalmente os estilos, para o novo layout. Utiliza as <span>mesmas tecnologias</span> do site principal. ",
+                    "type": "1",
+                    "tech": ["JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "CI - Intercâmbio Zion",
                     "link": "https://intercambiozion.com.br",
-                    "img": "/img/ci-zion.png",
-                    "text": "O cliente havia <span>solicitado a outro fornecedor</span> um hotsite simples em <span>Wordpress</span> para testar o <span>novo produto</span>. Após um tempo, em 2019, <span>pediram para gente</span> que o controlássemos pelo <span>CMS já fornecido e integrado aos outros sites da empresa</span>. Como <span>evitamos</span> trabalhar com <span>Wordpress</span>, fui <span>responsável por refazer o site em React</span>, utilizando também <span>Styled Components</span>, <span>Redux-form</span>, <span>Apollo</span>, <span>GraphQL</span> e <span>Next.js para SSR</span>."
+                    "img": "/img/projects/ci-zion.png",
+                    "text": "O cliente havia <span>solicitado a outro fornecedor</span> um hotsite simples em <span>Wordpress</span> para testar o <span>novo produto</span>. Após um tempo, em 2019, <span>pediram para gente</span> que o controlássemos pelo <span>CMS já fornecido e integrado aos outros sites da empresa</span>. Como <span>evitamos</span> trabalhar com <span>Wordpress</span>, fui <span>responsável por refazer o site em React</span>, utilizando também <span>Styled Components</span>, <span>Redux-form</span>, <span>Apollo</span>, <span>GraphQL</span> e <span>Next.js para SSR</span>.",
+                    "type": "1",
+                    "tech": ["React", "JavaScript", "GraphQL", "PHP"]
                 },
                 {
                     "name": "Abipe",
                     "link": "https://www.abipe.org.br",
-                    "img": "/img/abipe.png",
-                    "text": "Uma <span>empresa sem fins lucrativos do Grupo CI</span>, seu site conta com uma área exclusiva para seus usuários, onde eles realizam algumas <span>transações financeiras</span>. No início de <span>2020</span>, fui <span>responsável por trocar a biblioteca PHP do PagSeguro</span> (responsável pelos pagamentos) da <span>versão antiga</span> para a <span>nova</span>. O que resultou numa <span>extensiva revisão e adaptação do fluxo de pagamento já estabelecido</span>."
+                    "img": "/img/projects/abipe.png",
+                    "text": "Uma <span>empresa sem fins lucrativos do Grupo CI</span>, seu site conta com uma área exclusiva para seus usuários, onde eles realizam algumas <span>transações financeiras</span>. No início de <span>2020</span>, fui <span>responsável por trocar a biblioteca PHP do PagSeguro</span> (responsável pelos pagamentos) da <span>versão antiga</span> para a <span>nova</span>. O que resultou numa <span>extensiva revisão e adaptação do fluxo de pagamento já estabelecido</span>.",
+                    "type": "1",
+                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "Multicarepharma",
                     "link": "https://www.multicarepharma.com",
-                    "img": "/img/multicare.png",
-                    "text": "Uma subsidiária da <span>Expressa Group</span>, a Multicare é <span>responsável por fornecer medicamentos</span> (normalmente importados) para <span>pacientes com doenças raras</span>. Foi meu primeiro <span>projeto grande</span>, o fiz em julho de <span>2019</span>. Utiliza <span>React</span>, <span>Redux-form</span>, <span>Styled Components</span>, <span>Apollo</span>, <span>GraphQL</span> e um <span>CMS interno</span> para edição de dados."
+                    "img": "/img/projects/multicare.png",
+                    "text": "Uma subsidiária da <span>Expressa Group</span>, a Multicare é <span>responsável por fornecer medicamentos</span> (normalmente importados) para <span>pacientes com doenças raras</span>. Foi meu primeiro <span>projeto grande</span>, o fiz em julho de <span>2019</span>. Utiliza <span>React</span>, <span>Redux-form</span>, <span>Styled Components</span>, <span>Apollo</span>, <span>GraphQL</span> e um <span>CMS interno</span> para edição de dados.",
+                    "type": "1",
+                    "tech": ["React", "JavaScript", "GraphQL", "PHP"]
                 },
                 {
                     "name": "JP7",
                     "link": "https://www.jp7.com.br",
-                    "img": "/img/jp7.png",
-                    "text": "Como parte da minha <span>função</span> na empresa, no início de <span>2020</span> fui <span>responsável por atualizar o PHP e o Node de todos os nossos projetos</span>, o que resultou em <span>atualizações e revisões de vários pacotes e testes unitários e resoluções de erros</span>. Você pode ver mais sobre eles no site da empresa!"
+                    "img": "/img/projects/jp7.png",
+                    "text": "Como parte da minha <span>função</span> na empresa, no início de <span>2020</span> fui <span>responsável por atualizar o PHP e o Node de todos os nossos projetos</span>, o que resultou em <span>atualizações e revisões de vários pacotes e testes unitários e resoluções de erros</span>. Você pode ver mais sobre eles no site da empresa!",
+                    "type": "1",
+                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
                 },
                 {
                     "name": "Fight, Lord Willow!",
                     "link": "https://github.com/joaopbarberino/Fight-Lord-Willow-",
-                    "img": "/img/fight-lord.png",
-                    "text": "Desenvolvido em <span>grupo</span> como <span>projeto semestral pela faculdade</span> em <span>2019</span>, é um <span>jogo estilo Tower Defense</span>, para <span>Windows</span>. Apesar de estar um pouco <span>imbalanced</span> nos números (vida dos monstros, dano das torres, recompensas etc.), tenho bastante <span>orgulho</span> dele por ter sido <span>feito completamente em Java</span>. O <span>caminho</span> que os monstros tomam é <span>decidido com inteligência artificial</span>, o que tornaria a <span>expansão do jogo</span>, ou apenas a alteração do mapa, bem simples nesse quesito. Fui <span>responsável pela gerência do projeto</span>, <span>parte do game design</span> e <span>implementação de diversas mecânicas essenciais</span> do jogo, que também são <span>escaláveis</span>. Você pode <span>jogá-lo de graça</span> ao <span>baixar</span> o repositório e <span>executar o arquivo .exe</span>."
+                    "img": "/img/projects/fight-lord.png",
+                    "text": "Desenvolvido em <span>grupo</span> como <span>projeto semestral pela faculdade</span> em <span>2019</span>, é um <span>jogo estilo Tower Defense</span>, para <span>Windows</span>. Apesar de estar um pouco <span>imbalanced</span> nos números (vida dos monstros, dano das torres, recompensas etc.), tenho bastante <span>orgulho</span> dele por ter sido <span>feito completamente em Java</span>. O <span>caminho</span> que os monstros tomam é <span>decidido com inteligência artificial</span>, o que tornaria a <span>expansão do jogo</span>, ou apenas a alteração do mapa, bem simples nesse quesito. Fui <span>responsável pela gerência do projeto</span>, <span>parte do game design</span> e <span>implementação de diversas mecânicas essenciais</span> do jogo, que também são <span>escaláveis</span>. Você pode <span>jogá-lo de graça</span> ao <span>baixar</span> o repositório e <span>executar o arquivo .exe</span>.",
+                    "type": "0",
+                    "tech": ["Java"]
                 },
                 {
                     "name": "Meteor Hunt",
                     "link": "https://github.com/waffliors/meteor-hunt",
-                    "img": "/img/meteor-hunt.png",
-                    "text": "Desenvolvido em <span>grupo</span> como <span>projeto semestral pela faculdade</span> em <span>2018</span>, é um <span>jogo estilo Shooter</span> baseado em Asteroids do Atari, para <span>Windows</span>. <span>Feito completamente em Python</span>, utilizando a <span>biblioteca pygame</span>. Não conseguimos implementar todo o planejado, mas o jogo está <span>completamente funcional</span> e <span>divertido</span>. Além de <span>tomar parte no planejamento</span>, <span>game design e em outras coisas</span>, meu <span>maior triunfo</span> aqui foi o <span>sistema de save</span>: os highscores são salvos localmente no computador do usuário. Você pode <span>jogá-lo de graça</span> ao <span>baixar</span> o repositório e <span>executar o arquivo .exe</span>."
+                    "img": "/img/projects/meteor-hunt.png",
+                    "text": "Desenvolvido em <span>grupo</span> como <span>projeto semestral pela faculdade</span> em <span>2018</span>, é um <span>jogo estilo Shooter</span> baseado em Asteroids do Atari, para <span>Windows</span>. <span>Feito completamente em Python</span>, utilizando a <span>biblioteca pygame</span>. Não conseguimos implementar todo o planejado, mas o jogo está <span>completamente funcional</span> e <span>divertido</span>. Além de <span>tomar parte no planejamento</span>, <span>game design e em outras coisas</span>, meu <span>maior triunfo</span> aqui foi o <span>sistema de save</span>: os highscores são salvos localmente no computador do usuário. Você pode <span>jogá-lo de graça</span> ao <span>baixar</span> o repositório e <span>executar o arquivo .exe</span>.",
+                    "type": "0",
+                    "tech": ["Python"]
                 },
                 {
                     "name": "Cold Runner",
                     "link": "https://garahorn.itch.io/cold-runner",
-                    "img": "/img/cold-runner.png",
-                    "text": "Desenvolvido em <span>grupo</span> para uma <span>Game Jam</span> em <span>2020</span>, é um jogo estilo <span>Endless Runner/ de Plataforma</span>, sob o tema “Frio”, para <span>Android</span>. <span>Feito com C# na engine Unity3D</span>. <span>Conseguimos implementar todo o planejado</span>. <span>Não participei ativamente da programação</span> deste aqui, mas fui <span>responsável por parte do game design</span> e pela <span>implementação inicial</span> do <span>sistema de pontuação</span>, além de estar <span>presente do começo ao fim do projeto</span>. Você pode <span>jogá-lo de graça</span> ao baixar e <span>instalar o .apk</span>."
+                    "img": "/img/projects/cold-runner.png",
+                    "text": "Desenvolvido em <span>grupo</span> para uma <span>Game Jam</span> em <span>2020</span>, é um jogo estilo <span>Endless Runner/ de Plataforma</span>, sob o tema “Frio”, para <span>Android</span>. <span>Feito com C# na engine Unity3D</span>. <span>Conseguimos implementar todo o planejado</span>. <span>Não participei ativamente da programação</span> deste aqui, mas fui <span>responsável por parte do game design</span> e pela <span>implementação inicial</span> do <span>sistema de pontuação</span>, além de estar <span>presente do começo ao fim do projeto</span>. Você pode <span>jogá-lo de graça</span> ao baixar e <span>instalar o .apk</span>.",
+                    "type": "0",
+                    "tech": ["Unity", "C#"]
                 },
                 {
                     "name": "A Jornada de Vidar",
                     "link": "https://bit.ly/VidarGame",
-                    "img": "/img/vidar.png",
-                    "text": "Desenvolvido em <span>grupo</span> como <span>projeto final pela faculdade</span> de <span>2019</span> a <span>2020</span>, é um jogo de <span>puzzle 3D</span> com elementos de <span>aventura</span> e narrativa baseada na mitologia nórdica. Durante o jogo, você <span>coleta runas</span>, que o concedem <span>poderes</span> necessários para resolver os <span>puzzles e passar de fases</span>. Um garoto que tem a vida mudada do dia pra noite não pode fazer nada além de seguir em frente. Com a ajuda dos deuses ele irá <span>superar</span> qualquer <span>desafio</span> para restaurar seu mundo. Participei ativamente de todo o <span>game design</span>, <span>elaboração</span> e <span>desenvolvimento do projeto</span>, sendo <span>responsável por parte de seu gerenciamento</span>, <span>desenvolvimento de sistemas</span>, como <span>diálogos</span> e <span>tutorial</span>, e <span>mecânica de jogo no geral</span>. Atualmente em <span>versão alfa</span> você pode <span>jogá-lo de graça</span> e saber mais sobre o projeto, assim como nos dar seu feedback, no <span>link ao lado</span>."
+                    "img": "/img/projects/vidar.png",
+                    "text": "Desenvolvido em <span>grupo</span> como <span>projeto final pela faculdade</span> de <span>2019</span> a <span>2020</span>, é um jogo de <span>puzzle 3D</span> com elementos de <span>aventura</span> e narrativa baseada na mitologia nórdica. Durante o jogo, você <span>coleta runas</span>, que o concedem <span>poderes</span> necessários para resolver os <span>puzzles e passar de fases</span>. Um garoto que tem a vida mudada do dia pra noite não pode fazer nada além de seguir em frente. Com a ajuda dos deuses ele irá <span>superar</span> qualquer <span>desafio</span> para restaurar seu mundo. Participei ativamente de todo o <span>game design</span>, <span>elaboração</span> e <span>desenvolvimento do projeto</span>, sendo <span>responsável por parte de seu gerenciamento</span>, <span>desenvolvimento de sistemas</span>, como <span>diálogos</span> e <span>tutorial</span>, e <span>mecânica de jogo no geral</span>. Atualmente em <span>versão alfa</span> você pode <span>jogá-lo de graça</span> e saber mais sobre o projeto, assim como nos dar seu feedback, no <span>link ao lado</span>.",
+                    "type": "0",
+                    "tech": ["Unity", "C#"]
                 },
                 {
                     "name": "Esse site!",
                     "link": "https://github.com/joaopbarberino",
-                    "img": "/img/github.png",
-                    "text": "Desenvolvido <span>completamente por mim</span>, dessa vez arrisquei até no layout! Feito com <span>React</span> e <span>Styled Components</span>, que são as <span>tecnologias que mais gosto de usar no momento</span>. Você pode ver o código fonte, assim como <span>outros projetos e estudos</span> meus que não estão citados aqui, no meu <span>GitHub</span>."
+                    "img": "/img/projects/github.png",
+                    "text": "Desenvolvido <span>completamente por mim</span>, dessa vez arrisquei até no layout! Feito com <span>React</span> e <span>Styled Components</span>, que são as <span>tecnologias que mais gosto de usar no momento</span>. Você pode ver o código fonte, assim como <span>outros projetos e estudos</span> meus que não estão citados aqui, no meu <span>GitHub</span>.",
+                    "type": "1",
+                    "tech": ["React", "TypeScript"]
                 }
             ]
         },
