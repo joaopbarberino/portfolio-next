@@ -98,6 +98,15 @@ const defaultTheme = createTheme({
 					}
 				}
 			}
+		},
+		MuiTypography: {
+			styleOverrides: {
+				root: {
+					span: {
+						color: colorSchemes.palette.secondary.light
+					}
+				}
+			}
 		}
 	}
 });

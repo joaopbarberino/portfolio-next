@@ -22,10 +22,6 @@ const StyledContactContainer = styled(Container)(({ theme }) => ({
 
         p: {
             fontSize: '1.4rem',
-
-            span: {
-                color: theme.palette.secondary.main,
-            },
         },
 
         '.MuiSnackbar-root': {

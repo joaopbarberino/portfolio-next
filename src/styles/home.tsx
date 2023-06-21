@@ -39,10 +39,6 @@ const StyledHomeContainer = styled('div')(({ theme }) => ({
         flexDirection: 'column',
         justifyContent: 'center',
 
-        span: {
-            color: theme.palette.secondary.main
-        },
-
         button: {
             margin: '75px auto'
         }
