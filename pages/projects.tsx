@@ -81,7 +81,7 @@ const Projects = () => {
     }, [currentBreakpoint, filteredProjects]);
 
     const handleProjectType = (event: React.MouseEvent<HTMLElement>, newType: number) => {
-        if (newType)
+        if (newType !== null)
             setProjectType(newType)
     };
 
@@ -100,10 +100,10 @@ const Projects = () => {
                         aria-label={LABELS['buttonGroup'][language]}
                         size='large'
                     >
-                        <ToggleButton value={'0'} aria-label={LABELS['gameDevButton'][language]} color='secondary'>
+                        <ToggleButton value={EProjectTypes.GAME} aria-label={LABELS['gameDevButton'][language]} color='secondary'>
                             <SportsEsportsIcon /> {LABELS['gameDevButton'][language]}
                         </ToggleButton>
-                        <ToggleButton value={'1'} aria-label={LABELS['webDevButton'][language]} color='secondary'>
+                        <ToggleButton value={EProjectTypes.WEB} aria-label={LABELS['webDevButton'][language]} color='secondary'>
                             <WebIcon /> {LABELS['webDevButton'][language]}
                         </ToggleButton>
                     </ToggleButtonGroup>
