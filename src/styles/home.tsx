@@ -40,7 +40,7 @@ const StyledHomeContainer = styled('div')(({ theme }) => ({
         justifyContent: 'center',
 
         span: {
-            color: theme.palette.secondary.main
+            color: theme.palette.secondary.light
         },
 
         button: {

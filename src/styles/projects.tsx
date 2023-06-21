@@ -24,7 +24,7 @@ const StyledProjectsContainer = styled(Container)(({ theme }) => ({
             fontSize: '1.4rem',
 
             span: {
-                color: theme.palette.secondary.main,
+                color: theme.palette.secondary.light,
             },
         },
 

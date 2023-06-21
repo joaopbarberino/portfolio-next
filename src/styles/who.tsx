@@ -6,7 +6,7 @@ const StyledWhoContainer = styled(Container)(({ theme }) => ({
     paddingBottom: 80,
 
     span: {
-        color: theme.palette.secondary.main
+        color: theme.palette.secondary.light
     },
 
     '.title, .subtitle': {
