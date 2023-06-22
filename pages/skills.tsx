@@ -1,13 +1,18 @@
+import React, { useContext, useState, useEffect } from 'react';
+
 import Layout from '@/components/Layout';
 import StyledSkillsContainer from '@/styles/skills';
 import data from '@/helpers/data.json';
 import StyledWhoContainer from '@/styles/who';
-import { Box, Container, Typography, LinearProgress } from '@mui/material';
-import { useContext } from 'react';
+import { Box, Container, Typography, CircularProgress } from '@mui/material';
+
 import AppContext from '@/services/AppContext';
 import BoltIcon from '@mui/icons-material/Bolt';
 import PageActionsContainer from '@/components/PageActionsContainer';
 import PageChangeButton from '@/components/PageChangeButton';
+import { IRecord } from '@/services/api/record/types';
+import { getAllRecords } from '@/services/api/record';
+import { isAxiosError } from 'axios';
 
 interface ILabelPhrases {
     cap: number,
@@ -38,8 +43,27 @@ const LABEL_PHRASES: ILabelPhrases[] = [
     }
 ];
 
-const Who = () => {
+const PAGE_KEY = 'skills';
+
+const Skills = () => {
     const { language } = useContext(AppContext);
+
+    const [records, setRecords] = useState<IRecord[]>();
+
+    useEffect(() => {
+        const loadPage = async () => {
+            const response = await getAllRecords(PAGE_KEY);
+
+            if (isAxiosError(response)) {
+
+            } else {
+                setRecords(response);
+                console.log(response);
+            }
+        };
+
+        loadPage();
+    }, [])
 
     return (
         <Layout>
@@ -50,24 +74,31 @@ const Who = () => {
 
                     <div className='skills'>
                         {
-                            data[language].skills.strengths.map(skill =>
-                                <div className='skill' key={skill.name}>
-                                    <Typography variant='h5' dangerouslySetInnerHTML={{ __html: skill.name }} />
-                                    <Typography className={`label-phrase`}>
-                                        {LABEL_PHRASES.filter(label => skill.value <= label.cap)[0][language]}
-                                    </Typography>
-                                    <div className='progress-container'>
-                                        <div
-                                            className='progress-bar'
-                                            role='progressbar'
-                                            aria-valuemax={100}
-                                            aria-valuemin={0}
-                                            aria-valuenow={skill.value}
-                                            style={{ width: `${skill.value}%` }}
-                                        />
+                            records ?
+                                records.map(record => {
+                                    const skill = {
+                                        name: record.values[0][language],
+                                        value: parseInt(record.values[1][language]),
+                                    }
+
+                                    return <div className='skill' key={record.id}>
+                                        <Typography variant='h5' dangerouslySetInnerHTML={{ __html: skill.name }} />
+                                        <Typography className={`label-phrase`}>
+                                            {LABEL_PHRASES.filter(label => skill.value <= label.cap)[0][language]}
+                                        </Typography>
+                                        <div className='progress-container'>
+                                            <div
+                                                className='progress-bar'
+                                                role='progressbar'
+                                                aria-valuemax={100}
+                                                aria-valuemin={0}
+                                                aria-valuenow={skill.value}
+                                                style={{ width: `${skill.value}%` }}
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-                            )
+                                })
+                                : <CircularProgress color='secondary' sx={{ my: 10, mx: 'auto', display: 'flex' }} />
                         }
                     </div>
                 </div>
@@ -82,4 +113,4 @@ const Who = () => {
     )
 };
 
-export default Who;
+export default Skills;
