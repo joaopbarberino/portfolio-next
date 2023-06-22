@@ -1,8 +1,11 @@
+import { IRecordValue } from '@/services/api/record/types';
+
 export interface IProject {
-    name: string;
-    link: string;
-    img: string;
-    text: string;
-    type: string;
-    tech: string[];
+    id: string;
+    name: IRecordValue;
+    link: IRecordValue;
+    img: IRecordValue;
+    text: IRecordValue;
+    type: IRecordValue;
+    tech: IRecordValue;
 };

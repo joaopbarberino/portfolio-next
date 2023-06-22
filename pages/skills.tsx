@@ -1,18 +1,18 @@
 import React, { useContext, useState, useEffect } from 'react';
+import { isAxiosError } from 'axios';
 
+import data from '@/helpers/data.json';
+import AppContext from '@/services/AppContext';
+import { getAllRecords } from '@/services/api/record';
+import { IRecord } from '@/services/api/record/types';
+
+import { Typography, CircularProgress } from '@mui/material';
 import Layout from '@/components/Layout';
 import StyledSkillsContainer from '@/styles/skills';
-import data from '@/helpers/data.json';
-import StyledWhoContainer from '@/styles/who';
-import { Box, Container, Typography, CircularProgress } from '@mui/material';
-
-import AppContext from '@/services/AppContext';
-import BoltIcon from '@mui/icons-material/Bolt';
 import PageActionsContainer from '@/components/PageActionsContainer';
 import PageChangeButton from '@/components/PageChangeButton';
-import { IRecord } from '@/services/api/record/types';
-import { getAllRecords } from '@/services/api/record';
-import { isAxiosError } from 'axios';
+
+import BoltIcon from '@mui/icons-material/Bolt';
 
 interface ILabelPhrases {
     cap: number,
@@ -63,7 +63,7 @@ const Skills = () => {
         };
 
         loadPage();
-    }, [])
+    }, []);
 
     return (
         <Layout>

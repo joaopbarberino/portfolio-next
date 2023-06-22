@@ -98,7 +98,7 @@
                     "img": "/img/projects/ci.png",
                     "text": "One of our <span>biggest clients</span> at JP7, <span>CI is the biggest name on exchange programs in Brazil</span> and even has some units in other countries. We’ve been <span>responsible for their sites for years</span>. There, I’ve been providing <span>maintenance</span> since I entered, taking <span>requests from the client</span>, such as add new pages, edit old ones and even delete or change their locations – following the system which was already established. It's made mainly on <span>Laravel</span>, <span>Bootstrap</span> and <span>Javascript</span>, using an <span>intern CMS</span> to edit data. I’ve been also involved in the environment configuration to <span>test</span> some functionalities on <span>React</span>.",
                     "type": "1",
-                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
+                    "tech": ["Laravel, JavaScript, jQuery, PHP"]
                 },
                 {
                     "name": "CI - Feira Trabalhar e Estudar",
@@ -106,7 +106,7 @@
                     "img": "/img/projects/ci-feira.png",
                     "text": "It’s a <span>hotsite</span> developed some time ago to publicize the company’s <span>annual event</span>. By the end of <span>2019</span>, I was <span>responsible to update the whole website structure</span>, mainly the styles, to the new layout. Uses the <span>very same tech</span> of the main website.",
                     "type": "1",
-                    "tech": ["JavaScript", "jQuery", "PHP"]
+                    "tech": ["JavaScript, jQuery, PHP"]
                 },
                 {
                     "name": "CI - Intercâmbio Zion",

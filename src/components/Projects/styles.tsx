@@ -16,6 +16,11 @@ const StyledProjectCard = styled(Card)(({ theme }) => ({
     },
 
     '.MuiCardContent-root': {
+        h5: {
+            minHeight: 65,
+            alignItems: 'center',
+            display: 'flex'
+        },
         p: {
             fontSize: '1.2rem !important'
         },

@@ -33,7 +33,7 @@ const Home = () => {
         };
 
         loadPage();
-    }, [])
+    }, []);
 
     return (
         <Layout>

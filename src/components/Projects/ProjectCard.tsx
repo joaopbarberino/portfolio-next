@@ -52,23 +52,22 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project, isSelected, setSele
     return (
         <StyledProjectCard>
             <CardMedia
-                image={img}
-                title={name}
+                image={img[language]}
+                title={name[language]}
             />
             <CardContent className={`${isSelected}`}>
                 <Collapse in={!isSelected}>
                         <Typography variant='h5' color='secondary'>
-                            {name}
+                            {name[language]}
                         </Typography>
-                        {/* <Typography>
-                            {text.replace(/<\/?[^>]+(>|$)/g, '').substring(0, 50).trim()}...
-                        </Typography> */}
-                        <Typography dangerouslySetInnerHTML={{ __html: text.substring(0, 110) + '...'}} />
+                        <Typography>
+                            {text[language].replace(/<\/?[^>]+(>|$)/g, '').substring(0, 80).trim()}...
+                        </Typography>
                 </Collapse>
             </CardContent>
             <CardActions>
                 <Stack direction='row' spacing={1} useFlexGap flexWrap={'wrap'} >
-                    {tech.map(t => <Chip key={t} label={t} />)}
+                    {tech[language].split(',').map(t => <Chip key={t.trim()} label={t.trim()} />)}
                 </Stack>
                 <Stack className='buttons' direction='row' spacing={1} useFlexGap flexWrap={'wrap'} >
                     <Button
@@ -83,7 +82,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project, isSelected, setSele
                         variant='contained'
                         color='secondary'
                         endIcon={<LinkIcon />}
-                        href={link}
+                        href={link[language]}
                         target='_blank'
                     >
                         {LABELS['visitButton'][language]}

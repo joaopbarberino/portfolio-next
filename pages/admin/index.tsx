@@ -24,7 +24,7 @@ const FORM_FIELDS: IFormConfig = {
     home: ['text'],
     who: ['text'],
     skills: ['name', 'value'],
-    projects: ['name', 'img', 'text', 'tech', 'type'],
+    projects: ['name', 'link', 'img', 'text', 'type', 'tech'],
 };
 
 const Admin = () => {
