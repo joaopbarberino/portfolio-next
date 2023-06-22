@@ -115,8 +115,8 @@ const Admin = () => {
                                     record.values.map(value =>
                                         <Stack key={`${record.id}-${value.name}`} sx={{ mt: 2 }}>
                                             <Typography>Field: {value.name.toUpperCase()}</Typography>
-                                            <Typography>En: {value.en}</Typography>
-                                            <Typography>ptBr: {value.ptBr}</Typography>
+                                            <Typography>EN: {value.en}</Typography>
+                                            <Typography>PTBR: {value.ptBr}</Typography>
                                         </Stack>
                                     )
                                 }
