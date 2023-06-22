@@ -1,18 +1,39 @@
-import React, { useContext } from 'react';
-
+import React, { useContext, useState, useEffect } from 'react';
 import Image from 'next/image';
-import Grid from '@mui/material/Unstable_Grid2';
-import { Container, Typography } from '@mui/material/';
-
-import StyledHomeContainer from '@/styles/home';
 
 import AppContext from '@/services/AppContext';
 import data from '@/helpers/data.json';
+import { IRecord } from '@/services/api/record/types';
+import { getAllRecords } from '@/services/api/record';
+
+import { Container, Typography, Skeleton } from '@mui/material/';
+import Grid from '@mui/material/Unstable_Grid2';
+import StyledHomeContainer from '@/styles/home';
 import PageChangeButton from '@/components/PageChangeButton';
 import Layout from '@/components/Layout';
+import { isAxiosError } from 'axios';
+
+const PAGE_KEY = 'home';
 
 const Home = () => {
     const { language } = useContext(AppContext);
+
+    const [records, setRecords] = useState<IRecord[]>();
+
+    useEffect(() => {
+        const loadPage = async () => {
+            const response = await getAllRecords(PAGE_KEY);
+
+            if (isAxiosError(response)) {
+                
+            } else {
+                setRecords(response);
+                console.log(response);
+            }
+        };
+
+        loadPage();
+    }, [])
 
     return (
         <Layout>
@@ -34,7 +55,18 @@ const Home = () => {
 
                         <Grid xs={12} md={6} lg={8} className='intro'>
                             {
-                                data[language].home.text.map(text => <Typography variant='h4' key={text} dangerouslySetInnerHTML={{ __html: text }} />)
+                                records ?
+                                    records.map(record =>
+                                        record.values.map(value =>
+                                            <Typography variant='h4' key={value[language]} dangerouslySetInnerHTML={{ __html: value[language] }} />
+                                        ))
+                                    :
+                                    <>
+                                        <Skeleton width={500}/>
+                                        <Skeleton width={400}/>
+                                        <Skeleton width={400}/>
+                                        <Skeleton width={400}/>
+                                    </>
                             }
                             <PageChangeButton text={data[language].home.button} href='/who' />
                         </Grid>
