@@ -14,7 +14,13 @@ interface ICustomRequest extends NextApiRequest {
 const returnAllRecords = async (key: string, res: NextApiResponse<IRecord[] | { error: string }>) => {
     const records = await redisGetAllRecords(key);
 
-    return res.status(200).json(records);
+    const sortedRecods = records.sort((a, b) => {
+        if (a.order !== undefined && b.order !== undefined) 
+            return a.order - b.order;
+        return 0;
+    });
+
+    return res.status(200).json(sortedRecods);
 }
 
 // Create record on given key

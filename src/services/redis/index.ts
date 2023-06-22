@@ -43,10 +43,14 @@ export const redisGetAllRecords = async (key: string) => {
     const records = await redis.hgetall(key)
         .catch((e) => console.error(`Failed to retrieve record from key: ${key}`, e));
 
+
     if (!records) return [];
 
-    const recordsArray: Array<{ id: string;[key: string]: any }> = Object.entries(records).map(
-        ([recordId, recordJSON]) => ({ id: recordId, ...recordJSON as Object })
+    const recordsArray: IRecord[] = Object.entries(records).map(
+        ([recordId, recordJSON]) => ({ 
+            ...recordJSON as IRecord,
+            id: recordId
+        })
     );
 
     return recordsArray;

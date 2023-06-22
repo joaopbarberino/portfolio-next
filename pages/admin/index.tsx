@@ -40,7 +40,7 @@ const Admin = () => {
             // Fail to get records
         } else {
             console.log(response);
-            setRecords(response.sort((a, b) => a.order && b.order ? (a.order - b.order) : 0));
+            setRecords(response);
         }
     }, [selectedKey]);
 

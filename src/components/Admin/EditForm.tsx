@@ -32,8 +32,6 @@ const EditForm: React.FC<IEditFormProps> = ({ open, handleClose, fields, recordK
                     en: value?.en ?? '',
                     ptBr: value?.ptBr ?? ''
                 }
-                console.log(newField);
-
                 return newField;
             })
         );
@@ -113,7 +111,6 @@ const EditForm: React.FC<IEditFormProps> = ({ open, handleClose, fields, recordK
                     <Stack spacing={3}>
                         {
                             dynamicFields.map((input, index) => {
-                                console.log(input);
                                 return (
                                     <Stack key={index} spacing={2}>
                                         <Typography>Field: {input.name}</Typography>
