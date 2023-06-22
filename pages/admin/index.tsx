@@ -55,7 +55,8 @@ const Admin = () => {
     };
 
     const handleDeleteRecord = async (record: IRecord) => {
-        if (confirm('Are you sure?')) {
+        // TODO: Change to auth method
+        if (confirm('Are you sure?') && process.env.NODE_ENV === 'development') {
             const response = await deleteRecord(selectedKey, record.id);
 
             if (isAxiosError(response)) {
