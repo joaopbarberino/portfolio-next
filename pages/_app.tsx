@@ -28,7 +28,7 @@ export default function MyApp(props: MyAppProps) {
     const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
     const { pathname } = useRouter();
 
-    const [language, setLanguage] = React.useState<'en' | 'ptBr'>('ptBr');
+    const [language, setLanguage] = React.useState<'en' | 'ptBr'>('en');
     const [customTheme, setCustomTheme] = React.useState(theme);
 
     return (
