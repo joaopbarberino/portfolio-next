@@ -114,7 +114,7 @@
                     "img": "/img/projects/ci-zion.png",
                     "text": "The client has <span>requested another provider</span> a simple <span>Wordpress</span> hotsite to test this <span>new product</span>. Sometime later <span>2019</span>, they <span>asked us</span> to control it by the <span>CMS already provided and integrated to the other company’s websites</span>. As we <span>avoid</span> work with <span>Wordpress</span>, I was <span>responsible to redo the website on React</span>, using <span>Styled Components</span>, <span>Redux-form</span>, <span>Apollo</span>, <span>GraphQL</span> and <span>Next.js for SSR</span> as well.",
                     "type": "1",
-                    "tech": ["React", "JavaScript", "GraphQL", "PHP"]
+                    "tech": ["React, JavaScript, GraphQL, PHP"]
                 },
                 {
                     "name": "Abipe",
@@ -122,7 +122,7 @@
                     "img": "/img/projects/abipe.png",
                     "text": "A <span>no-profit company of CI Group</span>, their website counts with an exclusive area to its users, where they realize some <span>financial transactions</span>. By the start of <span>2020</span>, I was <span>responsible to change the PagSeguro</span> (a kind of Brazillian PayPal, responsible for the payments) <span>PHP library</span> of the <span>old version</span> to the <span>new one</span>, which resulted on an <span>extensive review and adaptation of the already established payment flux</span>.",
                     "type": "1",
-                    "tech": ["Laravel", "JavaScript", "jQuery", "PHP"]
+                    "tech": ["Laravel, JavaScript, jQuery, PHP"]
                 },
                 {
                     "name": "Multicarepharma",
@@ -130,7 +130,7 @@
                     "img": "/img/projects/multicare.png",
                     "text": "A subsidiary of Expressa Group, Multicare is <span>responsible to provide medicines</span> (normally imported) to <span>patients with rare diseases</span>. It was my first <span>big project</span>, I made it in <span>2019</span> July. Uses <span>React</span>, <span>Redux-form</span>, <span>Styled Components</span>, <span>Apollo</span>, <span>GraphQL</span> and an <span>intern CMS</span> to edit data.",
                     "type": "1",
-                    "tech": ["React", "JavaScript", "GraphQL", "PHP"]
+                    "tech": ["React, JavaScript, GraphQL, PHP"]
                 },
                 {
                     "name": "JP7",
@@ -235,7 +235,7 @@
         },
         "skills": {
             "title": "Habilidades",
-            "text": "De uma forma mais ilustrada, esses são meus <span>pontos fortes</span>: o quanto eu <span>conheço</span> sobre cada tema e o quão <span>confortável</span> eu me sinto em <span>aplicá-lo</span> diariamente.",
+            "text": "De uma forma mais ilustrada, esses são meus <span>pontos fortes</span>: o quanto eu <span>conheço</span> sobre cada tema e o quão <span>confortável</span> eu me sinto em <span>aplicá-los</span> diariamente.",
             "strengths": [
                 {
                     "name": "Comunicação/ Trabalho em Equipe",
