@@ -17,7 +17,7 @@ const StyledHomeContainer = styled('div')(({ theme }) => ({
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            width: 355,
+            width: 386,
             height: 404,
             marginLeft: 'auto',
             background: theme.palette.secondary.light,

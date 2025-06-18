@@ -43,8 +43,8 @@ const Home = () => {
                         <Grid xs={12} md={6} lg={4} className='photo'>
                             <div>
                                 <Image
-                                    src='/img/foto2.jpg'
-                                    width={345}
+                                    src='/img/foto-perfil-2025.jpg'
+                                    width={376}
                                     height={384}
                                     alt={data[language].home.imgTitle}
                                     title={data[language].home.imgTitle}
